@@ -13,11 +13,10 @@ let unsubscribe = store.subscribe(() =>
 );
 
 
-const render = (Game) => {
+
   ReactDOM.render(
       <Provider store={store}>
         <Game/>
       </Provider>,
     document.getElementById('root')
   );
-};
