@@ -8,7 +8,7 @@ class Board extends React.Component {
     return (
       <Square
         value={this.props.squares[i]}
-        getSquare={() => this.props.onClick(i)}
+        onClick={() => this.props.onClick(i)}
       />
     );
   }
@@ -36,8 +36,5 @@ class Board extends React.Component {
   }
 }
 
-Board.propTypes = {
-  onClick: PropTypes.func
-};
 
 export default Board;

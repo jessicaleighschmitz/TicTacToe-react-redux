@@ -7,10 +7,7 @@ function Square(props) {
       {props.value}
     </button>
   );
-}//showing X & O 
+}//showing X & O
 
-Square.propTypes = {
-  handleSquare:  Prop.func
-};
 
 export default Square;
